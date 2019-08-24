@@ -1,6 +1,6 @@
 package TwoSum_001
 
-func twoSum(nums []int, target int) []int {
+func TwoSum(nums []int, target int) []int {
 	numsLen := len(nums) - 1
 	for i := 0; i < numsLen; i++ {
 		for y := i + 1; y < numsLen; y++ {
@@ -16,7 +16,7 @@ func twoSumHelper(i int, y int) (result int) {
 	return i + y
 }
 
-func recursionTwoSum(nums []int, target int) []int {
+func RecursionTwoSum(nums []int, target int) []int {
 	return recursion(nums, 0, target)
 }
 
